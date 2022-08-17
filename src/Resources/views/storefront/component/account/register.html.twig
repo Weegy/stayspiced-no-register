@@ -1,0 +1,25 @@
+{% sw_extends '@Storefront/storefront/component/account/register.html.twig' %}
+{% block component_account_register_header %}
+    {% if page.group.id %}
+        {% if cardTitle %}
+            <div class="card-title">
+                {{"webv-deactivate-registration.registrationHeadline"|trans}}
+            </div>
+        {% endif %}
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}
+{% block component_account_register_form %}
+    {% if page.group.id %}
+        <div>
+            {% autoescape false %}
+                {{"webv-deactivate-registration.contentRegistration"|trans}}
+            {% endautoescape %}
+        </div>
+
+    {% else %}
+        {{ parent() }}
+    {% endif %}
+
+{% endblock %}

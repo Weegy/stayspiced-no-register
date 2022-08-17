@@ -1,0 +1,40 @@
+{
+  "name": "stayspiced/stayspicedNoRegister",
+  "description": "DeactiveRegister",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "byte5"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.4"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Stayspicedrld\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Stayspicedrld\\StayspicedNoRegister",
+    "copyright": "byte5",
+    "label": {
+      "de-DE": "StayspicedNoRegister",
+      "en-GB": "StayspicedNoRegister"
+    },
+    "description": {
+      "de-DE": "DeactiveRegister",
+      "en-GB": "DeactiveRegister"
+    },
+    "manufacturerLink": {
+      "de-DE": "https://acme.org",
+      "en-GB": "https://acme.org"
+    },
+    "supportLink": {
+      "de-DE": "https://acme.org",
+      "en-GB": "https://acme.org"
+    }
+  }
+}
